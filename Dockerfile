@@ -14,4 +14,8 @@ RUN curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}
     && mv hugo /usr/local/bin/hugo \
     && rm hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
+EXPOSE 1313
+
 ENTRYPOINT ["hugo"]
+
+WORKDIR /opt
