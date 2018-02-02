@@ -7,7 +7,7 @@ RUN apk add --no-cache \
     curl \
     tar
 
-ENV HUGO_VERSION 0.34
+ENV HUGO_VERSION 0.35
 
 RUN curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz \
     && tar zxf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz \
